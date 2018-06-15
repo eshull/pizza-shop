@@ -3,10 +3,15 @@ var pizza = function Pizza(size, toppings) {
   this.toppings = [];
 }
 
-pizza.prototype.combineToppings = function(1,2,3,4){
+var toppings = function Toppings(topping1, topping2, topping3, topping4) {
+  this.toppings = topping1, + topping2, + topping3, + topping4;
+}
 
-  this.toppings = slice(1,4);
-  })
+var toppings = function Toppings(topping1, topping2, topping3, topping4){
+  this.topping1 = topping1;
+  this.topping2 = topping2;
+  this.topping3 = topping3;
+  this.topping4 = topping4;
 }
 
 
@@ -24,16 +29,21 @@ $(document).ready(function() {
     var topping2 = $('input:checkbox[name=olives]:checked').val();
     var topping3 = $('input:checkbox[name=mushroom]:checked').val();
     var topping4 = $('input:checkbox[name=sausage]:checked').val();
-    var toppings = combineToppings(topping1, topping2, topping3, topping4);
-console.log(topping1, topping2, topping3, topping4);
-customersPizza = new pizza(pizzaSize, toppings);
 
+console.log(topping1, topping2, topping3, topping4);
+customersPizza = new Pizza(pizzaSize);
+customersToppings = new Toppings(topping1, topping2, topping3, topping4)
+
+
+pizza.toppings.push(topping1, topping2, topping3, topping4);
+
+pizza.Toppings(topping1, topping2, topping3, topping4);
 
 
     console.log(customersPizza);
-    allToppings = checkbox(toppings);
 
-    console.log(allToppings);
+
+
 
 
   });
