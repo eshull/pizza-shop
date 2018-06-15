@@ -12,18 +12,44 @@
   <body>
     <h1>Michealangelo's Pizza Shop</h1>
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 smallPizza">
-          <h2>Medium Pizza</h2>
+      <form class="" action="index.html" method="post">
+        <div class="row">
+            <div class="col-md-4 smallPizza">
+                <h2>Small Pizza</h2>
+              <label for="">Small</label>
+              <input type="radio" name="pizzaSize" value="">
+            </div>
+            <div class="col-md-4 medPizza">
+                <h2>Medium Pizza</h2>
+                <label for="">Medium</label>
+                <input type="radio" name="pizzaSize" value="">
+            </div>
+            <div class="col-md-4 largePizza">
+              <h2>Large Pizza</h2>
+              <label for="">Large</label>
+              <input type="radio" name="pizzaSize" value="">
+            </div>
         </div>
-        <div class="col-md-4 medPizza">
-          <h2>Small Pizza</h2>
-        </div>
-        <div class="col-md-4 largePizza">
-          <h2>Large Pizza</h2>
-        </div>
+        <div class="row">
+            <div class="col-md-3">
+              <h3>Pepperoni</h3>
+              <input type="checkbox" name="pepperoni" id="pepperoni">
+            </div>
+            <div class="col-md-3">
+              <h3>Olives</h3>
+              <input type="checkbox" name="olives" id="olives">
+            </div>
+            <div class="col-md-3">
+              <h3>Mushrooom</h3>
+              <input type="checkbox" name="mushroom" id="mushroom">
+            </div>
+            <div class="col-md-3">
+              <h3>Sausage</h3>
+              <input type="checkbox" name="sausage" id="sausage">
+            </div>
 
-      </div>
+          </div>
+      </form>
     </div>
   </body>
 </html>
