@@ -21,12 +21,8 @@ function Cost(first, second, third, fourth) {
   this.fourth = 2;
 }
 
-Cost.prototype.extraToppings = function() {
-  return customersPizza.cost = this.first + this.second + this.third + this.fourth + 10
-  // return this.first + this.second + this.third + this.fourth + 10
-}
-// pizza.prototype.customersToppings = function(topping1, topping2, topping3, topping4) {
-//   this.toppings = topping1, + topping2, + topping3, + topping4;
+// Cost.prototype.extraToppings = function() {
+//   return customersPizza.cost = this.first + this.second + this.third + this.fourth + 10
 // }
 
 Toppings.prototype.customersToppings = function() {
