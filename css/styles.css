@@ -5,3 +5,18 @@ img {
 .col-md-3 input {
   float: right;
 }
+.col-md-3 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+input[type="checkbox"] {
+  margin: -25px 0 0;
+}
+
+body {
+  background-image: url(../img/background.png);
+}
