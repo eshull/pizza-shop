@@ -20,6 +20,20 @@ Toppings.prototype.customersToppings = function() {
     return this.topping1 + ", " + this.topping2 + ", " + this.topping3 + ", " + this.topping4;
 }
 
+function checkIfUndefined(one, two, three, four) {
+  toppingsChecked = [];
+  if (one === undefined) {
+    one = "";
+  } else if (two === undefined) {
+    two = "";
+  } else if (three === undefined) {
+    three = "";
+  } else if (four === undefined) {
+    four = "";
+  }
+  toppingsChecked.push([one, two, three, four])
+  return toppingsChecked;
+}
 
 
 $(document).ready(function() {
@@ -32,21 +46,15 @@ $(document).ready(function() {
     var topping3 = $('input:checkbox[name=mushroom]:checked').val();
     var topping4 = $('input:checkbox[name=sausage]:checked').val();
 
-    console.log(topping1, topping2, topping3, topping4);
+    var toppingsChecked = checkIfUndefined(topping1, topping2, topping3, topping4);
+    console.log(toppingsChecked);
     customersPizza = new Pizza(pizzaSize);
     toppingsOrdered = new Toppings(topping1, topping2, topping3, topping4)
-    console.log(toppingsOrdered);
 
     customersPizza.toppings.push(toppingsOrdered);
     // customersPizza.toppings.push(toppingsOrdered);
 
-
-    // pizza.customersToppings(customersToppings);
-    // customersPizza.toppings.push(toppingsOrdered);
     console.log(customersPizza);
-    // customersPizza.toppings.push(customersToppings);
-
-     // $(".results").append("<li><span class='pizzaOrder'>" + customersPizza.size + customersPizza.toppings + "</span></li>");
 
      $(".results").html("<li>" + customersPizza.size + "</li>" + "<li>" + customersPizza.toppings[0].customersToppings() + "</li>");
 
