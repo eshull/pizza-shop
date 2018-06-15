@@ -12,22 +12,22 @@
   <body>
     <h1>Michealangelo's Pizza Shop</h1>
     <div class="container">
-      <form class="" action="index.html" method="post">
+      <form id="orderForm" action="index.html" method="post">
         <div class="row">
             <div class="col-md-4 smallPizza">
                 <h2>Small Pizza</h2>
               <label for="">Small</label>
-              <input type="radio" name="pizzaSize" value="">
+              <input id="sml" type="radio" name="pizzaSize" value="Small">
             </div>
             <div class="col-md-4 medPizza">
                 <h2>Medium Pizza</h2>
                 <label for="">Medium</label>
-                <input type="radio" name="pizzaSize" value="">
+                <input id="med" type="radio" name="pizzaSize" value="Medium">
             </div>
             <div class="col-md-4 largePizza">
               <h2>Large Pizza</h2>
-              <label for="">Large</label>
-              <input type="radio" name="pizzaSize" value="">
+              <label  for="">Large</label>
+              <input id="lrg" type="radio" name="pizzaSize" value="Large">
             </div>
         </div>
         <div class="row">
@@ -49,6 +49,7 @@
             </div>
 
           </div>
+          <button type="submit" name="button">Place Order</button>
       </form>
     </div>
   </body>
