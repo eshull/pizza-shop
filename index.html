@@ -10,21 +10,22 @@
 <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="masthead">
-      <h1>MICHAELANGELO'S</h1>
-      <h1>PIZZA SHOP</h1>
-    </div>
+
     <div class="container">
+      <div class="masthead">
+        <h1>MICHAELANGELO'S</h1>
+        <h1>PIZZA SHOP</h1>
+      </div>
       <form id="orderForm" action="index.html" method="post">
         <div class="row customer">
           <div class="col">
             <h2>Order A Pizza from Michaelangelo</h2>
-            <label for="name">What type of Pizza would you like?:</label>
-            <input id="customerName"type="text" name="name" value="">
+            <label for="name">What is your Name?:</label>
+            <input class="well" id="customerName"type="text" name="name" value="">
           </div>
 
         </div>
-        <div class="row">
+        <div class="row sizes">
             <div class="col-md-4 smallPizza">
                 <h2>Small Pizza</h2>
                 <label for=""></label>
@@ -45,10 +46,12 @@
 
             </div>
         </div>
-        <div class="row">
+        <div class="row toppings">
             <div class="col-md-3">
+              <div>
               <h3>Pepperoni</h3>
               <input type="checkbox" id="pepperoni" name="pepperoni" value="Pepperoni">
+            </div>
               <img src="img/pepperoni.png" alt="pepperoni">
               <!-- <input type="radio" name="pepperoni" id="pepperoni" value"pepperoni"> -->
             </div>

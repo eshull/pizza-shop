@@ -6,34 +6,63 @@ h1 {
   font-size: 65px;
   color: white;
   letter-spacing: 5px;
-  margin-top: 70px;
+  margin-top: 40px;
+}
+
+h2 {
+  margin-top: -10px;
+  margin-left: 3px;
+  font-size: 45px;
 }
 
 .masthead {
+  border: solid white 4px;
+  padding: 45px;
   text-align: center;
-  margin-top: 130px;
+  margin-top: 40px;
 }
 
 .customer {
-  margin-top: 85px;
+  padding: 25px;
+  margin-top: 55px;
+  border: solid white 2px;
 }
 
-.col-md-3 input {
-  float: right;
+.sizes {
+  padding: 45px;
+  margin-top: 85px;
+  border: solid white 2px;
 }
-.col-md-3 {
-  text-align: center;
+
+.toppings {
+  padding: 45px;
+  margin-top: 85px;
+  border: solid white 2px;
+}
+
+.output {
+  margin-top: 85px;
+  border: solid white 2px;
+}
+.col-md-3 input {
+  float: left;
+}
+.col-md-3 h2 {
+  margin-left: 50px;
 }
 
 h3 {
   font-size: 40px;
 }
-
+/*
 input[type="checkbox"] {
   margin: -25px 0 0;
+} */
+
+label {
+  margin-left: 10px;
+  font-size: 25px;
 }
-
-
 
 body {
   background-image: url(../img/background.png);
@@ -43,6 +72,15 @@ body {
   background-position: center center;
 }
 
-.row {
+button {
+  height: 90px;
+  width: 290px;
+  font-size: 35px;
+  color: white;
+  background-color: transparent;
+  border: solid white 2px;
+}
 
+.well {
+  margin-bottom: 0px;
 }
