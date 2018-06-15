@@ -21,30 +21,19 @@ $(document).ready(function() {
   $("#orderForm").submit(function(event) {
     event.preventDefault();
     var pizzaSize = $("input:radio[name=pizzaSize]:checked").val();
-    // toppings = document.getElementById("pepperoni").value;
-    // var toppings = [];
-
 
     var topping1 = $('input:checkbox[name=pepperoni]:checked').val();
     var topping2 = $('input:checkbox[name=olives]:checked').val();
     var topping3 = $('input:checkbox[name=mushroom]:checked').val();
     var topping4 = $('input:checkbox[name=sausage]:checked').val();
 
-console.log(topping1, topping2, topping3, topping4);
-customersPizza = new Pizza(pizzaSize);
-customersToppings = new Toppings(topping1, topping2, topping3, topping4)
+    console.log(topping1, topping2, topping3, topping4);
+    customersPizza = new pizza(pizzaSize);
+    customersToppings = new toppings(topping1, topping2, topping3, topping4)
 
+    customersPizza.toppings.push(customersToppings);
 
-pizza.toppings.push(topping1, topping2, topping3, topping4);
-
-pizza.Toppings(topping1, topping2, topping3, topping4);
-
-
-    console.log(customersPizza);
-
-
-
-
+        console.log(customersPizza);
 
   });
 });
