@@ -2,6 +2,22 @@ img {
   width: 100%;
 }
 
+h1 {
+  font-size: 65px;
+  color: white;
+  letter-spacing: 5px;
+  margin-top: 70px;
+}
+
+.masthead {
+  text-align: center;
+  margin-top: 130px;
+}
+
+.customer {
+  margin-top: 85px;
+}
+
 .col-md-3 input {
   float: right;
 }
@@ -17,6 +33,16 @@ input[type="checkbox"] {
   margin: -25px 0 0;
 }
 
+
+
 body {
   background-image: url(../img/background.png);
+  height: 3000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.row {
+
 }

@@ -10,14 +10,25 @@
 <script src="js/scripts.js"></script>
   </head>
   <body>
-    <h1>Michealangelo's Pizza Shop</h1>
+    <div class="masthead">
+      <h1>MICHAELANGELO'S</h1>
+      <h1>PIZZA SHOP</h1>
+    </div>
     <div class="container">
       <form id="orderForm" action="index.html" method="post">
+        <div class="row customer">
+          <div class="col">
+            <h2>Order A Pizza from Michaelangelo</h2>
+            <label for="name">What type of Pizza would you like?:</label>
+            <input id="customerName"type="text" name="name" value="">
+          </div>
+
+        </div>
         <div class="row">
             <div class="col-md-4 smallPizza">
                 <h2>Small Pizza</h2>
                 <label for=""></label>
-                <input id="sml" type="radio" name="pizzaSize" value="Small">
+                <input id="sml" type="radio" name="pizzaSize" value="Small" checked>
                 <img src="img/small.png" alt="small pizza">
             </div>
             <div class="col-md-4 medPizza">
@@ -63,9 +74,7 @@
       </form>
       <div class="results">
         <ul class="pizzaOrder">
-
         </ul>
-
       </div>
     </div>
   </body>
