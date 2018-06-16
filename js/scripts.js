@@ -91,7 +91,7 @@ $(document).ready(function() {
     console.log(customersPizza);
     console.log();
 
-     $(".results").html("<li>" + customersPizza.size + "</li>" + "<li>" + customersPizza.toppings[0].customersToppings() + "</li>" + "<li>" + customersPizza.cost + "</li>");
+     $(".results").html("<h3>" + "Pizza Size:" + "</h3>" + "<li>" + customersPizza.size + "</li>" + "<h3>" + "Pizza Toppings:" + "</h3>" + "<li>" + customersPizza.toppings[0].customersToppings() + "</li>" + "<h3>" + "Pizza Cost:" + "</h3>"  + "<li>" + "$"+ customersPizza.cost + "</li>");
 
 
   });

@@ -113,3 +113,8 @@ button {
   height: 500px;
   background: white;
 }
+
+li {
+  margin-left: 65px;
+  font-size: 45px;
+}
