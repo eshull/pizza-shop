@@ -1,9 +1,14 @@
 img {
   width: 100%;
 }
+.masthead-image {
+  width:460px;
+  float: right;
+}
 
 h1 {
-  font-size: 65px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 54px;
   color: white;
   letter-spacing: 5px;
   margin-top: 40px;
@@ -15,29 +20,42 @@ h2 {
   font-size: 45px;
 }
 
+h4 {
+  font-size: 37px;
+  letter-spacing: 7px;
+  color: white;
+  font-family: sans-serif;
+
+}
+
 .masthead {
-  border: solid white 4px;
+  border: solid #FF8E39 6px;
   padding: 45px;
-  text-align: center;
+  text-align: left;
   margin-top: 40px;
 }
+
+.header {
+  width: 50%;
+}
+
 
 .customer {
   padding: 25px;
   margin-top: 55px;
-  border: solid white 2px;
+  border: solid #FF8E39 6px;
 }
 
 .sizes {
   padding: 45px;
-  margin-top: 85px;
-  border: solid white 2px;
+  margin-top: 87px;
+  border: solid #DC7B28 5px;
 }
 
 .toppings {
   padding: 45px;
-  margin-top: 85px;
-  border: solid white 2px;
+  margin-top: 75px;
+  border: solid #E76529 6px;
 }
 
 .output {
@@ -83,4 +101,15 @@ button {
 
 .well {
   margin-bottom: 0px;
+  padding: 10px;
+}
+
+button {
+  margin-top: 25px;
+}
+
+.results {
+  margin-top: 85px;
+  height: 500px;
+  background: white;
 }
