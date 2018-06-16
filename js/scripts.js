@@ -1,4 +1,5 @@
-function Pizza(size, toppings) {
+function Pizza(name, size) {
+  this.name = name;
   this.size = size;
   this.toppings = [];
   this.cost = [];
@@ -27,6 +28,14 @@ function Cost(first, second, third, fourth) {
 
 Toppings.prototype.customersToppings = function() {
     return this.topping1 + " " + this.topping2 + " " + this.topping3 + " " + this.topping4;
+}
+
+function Name(customer) {
+  this.name = customer;
+}
+
+Name.prototype.customerName = function() {
+  return this.name;
 }
 
 function calculateBasePrice(pizza) {
@@ -66,6 +75,8 @@ function checkIfToppingIsOrdered(one) {
 $(document).ready(function() {
   $("#orderForm").submit(function(event) {
     event.preventDefault();
+    var customer = $("#customer").val();
+    console.log(customer);
     var pizzaSize = $("input:radio[name=pizzaSize]:checked").val();
     var basePrice = calculateBasePrice(pizzaSize);
     console.log(basePrice);
@@ -81,9 +92,13 @@ $(document).ready(function() {
     console.log(topping1Cost, topping2Cost, topping3Cost, topping4Cost);
     var pizzaTotal = pizzaCostCalculator(basePrice, topping1Cost, topping2Cost, topping3Cost, topping4Cost);
     console.log(pizzaTotal);
-    customersPizza = new Pizza(pizzaSize);
+
+    customerNew = new Name(customer);
+    customersPizza = new Pizza(customerNew, pizzaSize);
+
     toppingsOrdered = new Toppings(topping1, topping2, topping3, topping4);
     console.log(topping1, topping2, topping3, topping4);
+
 
     customersPizza.toppings.push(toppingsOrdered);
     customersPizza.cost.push(pizzaTotal);
@@ -91,7 +106,7 @@ $(document).ready(function() {
     console.log(customersPizza);
     console.log();
 
-     $(".results").html("<h3>" + "Pizza Size:" + "</h3>" + "<li>" + customersPizza.size + "</li>" + "<h3>" + "Pizza Toppings:" + "</h3>" + "<li>" + customersPizza.toppings[0].customersToppings() + "</li>" + "<h3>" + "Pizza Cost:" + "</h3>"  + "<li>" + "$"+ customersPizza.cost + "</li>");
+     $(".results").html("<h1>" + "ORDER FOR: " + customersPizza.name.customerName() + "</h1>" +"<h3>" + "Pizza Size:" + "</h3>" + "<li>" + customersPizza.size + "</li>" + "<h3>" + "Pizza Toppings:" + "</h3>" + "<li>" + customersPizza.toppings[0].customersToppings() + "</li>" + "<h3>" + "Pizza Cost:" + "</h3>"  + "<li>" + "$"+ customersPizza.cost + "</li>");
 
 
   });
